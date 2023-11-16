@@ -52,9 +52,9 @@
             // 
             this.btnDelete.Enabled = false;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnDelete.Location = new System.Drawing.Point(892, 203);
+            this.btnDelete.Location = new System.Drawing.Point(1019, 191);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(118, 32);
+            this.btnDelete.Size = new System.Drawing.Size(135, 30);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -62,17 +62,17 @@
             // textTimNV
             // 
             this.textTimNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textTimNV.Location = new System.Drawing.Point(99, 110);
+            this.textTimNV.Location = new System.Drawing.Point(113, 104);
             this.textTimNV.Name = "textTimNV";
-            this.textTimNV.Size = new System.Drawing.Size(298, 27);
+            this.textTimNV.Size = new System.Drawing.Size(340, 27);
             this.textTimNV.TabIndex = 5;
             // 
             // btnInsert
             // 
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnInsert.Location = new System.Drawing.Point(726, 203);
+            this.btnInsert.Location = new System.Drawing.Point(830, 191);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(118, 32);
+            this.btnInsert.Size = new System.Drawing.Size(135, 30);
             this.btnInsert.TabIndex = 3;
             this.btnInsert.Text = "Thêm";
             this.btnInsert.UseVisualStyleBackColor = true;
@@ -81,9 +81,9 @@
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSearch.Location = new System.Drawing.Point(410, 107);
+            this.btnSearch.Location = new System.Drawing.Point(469, 101);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(118, 32);
+            this.btnSearch.Size = new System.Drawing.Size(135, 30);
             this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -100,14 +100,15 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1178, 692);
+            this.panel1.Size = new System.Drawing.Size(1346, 651);
             this.panel1.TabIndex = 8;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(530, 10);
+            this.label1.Location = new System.Drawing.Point(606, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(173, 38);
             this.label1.TabIndex = 7;
@@ -118,9 +119,9 @@
             // 
             this.btnUpdate.Enabled = false;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnUpdate.Location = new System.Drawing.Point(1042, 203);
+            this.btnUpdate.Location = new System.Drawing.Point(1191, 191);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(118, 32);
+            this.btnUpdate.Size = new System.Drawing.Size(135, 30);
             this.btnUpdate.TabIndex = 2;
             this.btnUpdate.Text = "Cập nhật";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -143,14 +144,14 @@
             this.Column1,
             this.password});
             this.dgvNV.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvNV.Location = new System.Drawing.Point(0, 242);
-            this.dgvNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvNV.Location = new System.Drawing.Point(0, 228);
+            this.dgvNV.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dgvNV.MultiSelect = false;
             this.dgvNV.Name = "dgvNV";
             this.dgvNV.ReadOnly = true;
             this.dgvNV.RowHeadersWidth = 51;
             this.dgvNV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNV.Size = new System.Drawing.Size(1172, 615);
+            this.dgvNV.Size = new System.Drawing.Size(1339, 579);
             this.dgvNV.TabIndex = 19;
             // 
             // CustomerId
@@ -225,9 +226,9 @@
             // 
             // FNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1178, 692);
+            this.ClientSize = new System.Drawing.Size(1346, 651);
             this.Controls.Add(this.panel1);
             this.Name = "FNhanVien";
             this.Text = "FNhanVien";

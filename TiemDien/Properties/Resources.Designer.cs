@@ -83,9 +83,39 @@ namespace TiemDien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _6a193e1b3c27c3caae9d6ea3df9ac4ee {
+            get {
+                object obj = ResourceManager.GetObject("6a193e1b3c27c3caae9d6ea3df9ac4ee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap a214VPd_460s {
             get {
                 object obj = ResourceManager.GetObject("a214VPd_460s", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap a713baecd7e21cefd09de167ef767170 {
+            get {
+                object obj = ResourceManager.GetObject("a713baecd7e21cefd09de167ef767170", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap a713baecd7e21cefd09de167ef7671701 {
+            get {
+                object obj = ResourceManager.GetObject("a713baecd7e21cefd09de167ef7671701", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

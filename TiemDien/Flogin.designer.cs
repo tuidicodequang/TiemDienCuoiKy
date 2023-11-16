@@ -255,7 +255,7 @@ namespace TiemDien
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::TiemDien.Properties.Resources.pexels_photo_3217852;
+            this.pictureBox2.Image = global::TiemDien.Properties.Resources._6a193e1b3c27c3caae9d6ea3df9ac4ee;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";

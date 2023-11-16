@@ -19,7 +19,6 @@ namespace TiemDien
 
         public static List<NhanVien> LoadListNhanVien()
         {
-            //string file = @"C:\Users\manno\OneDrive\Desktop\TiemDienOOP\TiemDien\TiemDien\bin\Debug\NhanVien.xml";
             string file = "NhanVien.xml";
             List<NhanVien> dsNhanVien = new List<NhanVien>();
 
@@ -82,6 +81,9 @@ namespace TiemDien
             }
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }

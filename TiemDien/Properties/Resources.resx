@@ -127,8 +127,14 @@
   <data name="pexels-photo-3217852" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pexels-photo-3217852.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="a713baecd7e21cefd09de167ef767170" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\a713baecd7e21cefd09de167ef767170.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="password" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="a214VPd_460s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\a214VPd_460s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pngtree-aesthetic-wallpaper-in-technology-background-picture-image_1238751" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-aesthetic-wallpaper-in-technology-background-picture-image_1238751.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,7 +163,10 @@
   <data name="checklist" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checklist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="a214VPd_460s" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\a214VPd_460s.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="a713baecd7e21cefd09de167ef7671701" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\a713baecd7e21cefd09de167ef7671701.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6a193e1b3c27c3caae9d6ea3df9ac4ee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6a193e1b3c27c3caae9d6ea3df9ac4ee.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

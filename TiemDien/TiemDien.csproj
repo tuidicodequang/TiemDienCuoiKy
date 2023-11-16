@@ -174,5 +174,14 @@
       <Version>6.3.0</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a713baecd7e21cefd09de167ef767170.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a713baecd7e21cefd09de167ef7671701.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6a193e1b3c27c3caae9d6ea3df9ac4ee.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
