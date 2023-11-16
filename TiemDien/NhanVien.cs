@@ -39,7 +39,7 @@ namespace TiemDien
             return 0.15;
         }
     }
-
+    //
     public class NhanVienKT : NhanVien
     {
         public int SoNgayTangCa { get; set; }
