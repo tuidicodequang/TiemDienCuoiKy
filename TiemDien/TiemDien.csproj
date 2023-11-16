@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{06844DDF-8925-408F-9588-9E5D85C698DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TiemDien</RootNamespace>
+    <AssemblyName>TiemDien</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CuaHangTiemDien.cs" />
+    <Compile Include="Flogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flogin.designer.cs">
+      <DependentUpon>Flogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fmain.designer.cs">
+      <DependentUpon>Fmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FNhanVien.designer.cs">
+      <DependentUpon>FNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FthemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FthemNhanVien.designer.cs">
+      <DependentUpon>FthemNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FUpdateNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUpdateNhanVien.designer.cs">
+      <DependentUpon>FUpdateNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IBoLocTimKiem.cs" />
+    <Compile Include="IGiamGia.cs" />
+    <Compile Include="ITietKiemDien.cs" />
+    <Compile Include="KhacHang.cs" />
+    <Compile Include="Loa.cs" />
+    <Compile Include="ManHinh.cs" />
+    <Compile Include="MayIn.cs" />
+    <Compile Include="NhanVien.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SanPham.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="Flogin.resx">
+      <DependentUpon>Flogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fmain.resx">
+      <DependentUpon>Fmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FNhanVien.resx">
+      <DependentUpon>FNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FthemNhanVien.resx">
+      <DependentUpon>FthemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUpdateNhanVien.resx">
+      <DependentUpon>FUpdateNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-3217852.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhân viên1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhân viên.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-client-icon-businessman-icon-vector-design-5a6f77c8923c97.818921111517254600599.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1582439.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doanh thu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b9a21791534383.5e341720a5140.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b9a21791534383.5e341720a51401.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-aesthetic-wallpaper-in-technology-background-picture-image_1238751.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_216480626_7D9oipMrGQ66GPni8c5D2j25i2aJqDio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a214VPd_460s.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.Sharp">
+      <Version>6.3.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
