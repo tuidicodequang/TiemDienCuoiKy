@@ -18,7 +18,7 @@ namespace TiemDien
 
         public string tilekhunghinh { get; set; }
 
-        public string tansoquet { get; set; }
+        public string tansoquet { get; set; } //12
         public string LoaiManHinh { get; set; }
 
         public bool Co3d { get; set; }
