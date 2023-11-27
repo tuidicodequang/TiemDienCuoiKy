@@ -16,7 +16,7 @@ namespace TiemDien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           // Application.Run(new Flogin() );
+            //Application.Run(new Flogin() );
             Application.Run(new FNhanVien());
 
         }
