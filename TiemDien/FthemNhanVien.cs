@@ -13,7 +13,7 @@ namespace TiemDien
         {
             InitializeComponent();
         }
-        
+
         private void buttonLuu_Click(object sender, EventArgs e)
         {
             NhanVien nhanVien = CreateNhanVienFromInput();
@@ -34,6 +34,7 @@ namespace TiemDien
             string diaChi = txtDiaChiNV.Text;
             string user = textUser.Text;
             string password = textPassword.Text;
+            double HeSoluong = (double)numericUpDown1.Value;
             string prefix = maNV.Substring(0, 2);
 
             NhanVien nhanVien = null;
@@ -42,6 +43,7 @@ namespace TiemDien
             {
                 case "KT":
                     nhanVien = new NhanVienKT();
+                    nhanVien.ChucVu = "Ky thuat";
                     break;
 
                 case "BH":
@@ -116,9 +118,6 @@ namespace TiemDien
             }
 
             return dsNhanVien;
-
-
-
         }
 
 
@@ -145,11 +144,9 @@ namespace TiemDien
             }
         }
 
-        private void ButtonHuy_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-       
     }
 }

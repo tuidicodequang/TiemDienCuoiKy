@@ -46,11 +46,11 @@
             this.textSDT = new System.Windows.Forms.TextBox();
             this.txtDiaChiNV = new System.Windows.Forms.TextBox();
             this.ButtonLuu = new System.Windows.Forms.Button();
-            this.ButtonHuy = new System.Windows.Forms.Button();
             this.textNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
-            this.NumHSL = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.NumHSL)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -217,23 +217,14 @@
             // 
             // ButtonLuu
             // 
-            this.ButtonLuu.Location = new System.Drawing.Point(791, 371);
+            this.ButtonLuu.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.ButtonLuu.Location = new System.Drawing.Point(680, 333);
             this.ButtonLuu.Name = "ButtonLuu";
-            this.ButtonLuu.Size = new System.Drawing.Size(81, 33);
+            this.ButtonLuu.Size = new System.Drawing.Size(114, 33);
             this.ButtonLuu.TabIndex = 21;
             this.ButtonLuu.Text = "Lưu";
             this.ButtonLuu.UseVisualStyleBackColor = true;
             this.ButtonLuu.Click += new System.EventHandler(this.ButtonLuu_Click_1);
-            // 
-            // ButtonHuy
-            // 
-            this.ButtonHuy.Location = new System.Drawing.Point(930, 371);
-            this.ButtonHuy.Name = "ButtonHuy";
-            this.ButtonHuy.Size = new System.Drawing.Size(81, 33);
-            this.ButtonHuy.TabIndex = 22;
-            this.ButtonHuy.Text = "Hủy";
-            this.ButtonHuy.UseVisualStyleBackColor = true;
-            this.ButtonHuy.Click += new System.EventHandler(this.ButtonHuy_Click);
             // 
             // textNgaySinh
             // 
@@ -246,6 +237,35 @@
             this.textNgaySinh.Size = new System.Drawing.Size(196, 27);
             this.textNgaySinh.TabIndex = 23;
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.DecimalPlaces = 1;
+            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.numericUpDown1.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.numericUpDown1.Location = new System.Drawing.Point(791, 237);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 27);
+            this.numericUpDown1.TabIndex = 24;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -253,47 +273,29 @@
             this.label10.Location = new System.Drawing.Point(592, 237);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(102, 23);
-            this.label10.TabIndex = 24;
+            this.label10.TabIndex = 25;
             this.label10.Text = "Hệ số lương";
             // 
-            // NumHSL
+            // button1
             // 
-            this.NumHSL.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.NumHSL.DecimalPlaces = 1;
-            this.NumHSL.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.NumHSL.Location = new System.Drawing.Point(791, 240);
-            this.NumHSL.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.NumHSL.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.NumHSL.Name = "NumHSL";
-            this.NumHSL.Size = new System.Drawing.Size(120, 22);
-            this.NumHSL.TabIndex = 26;
-            this.NumHSL.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.button1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button1.Location = new System.Drawing.Point(870, 333);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(114, 33);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Hủy";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FthemNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1095, 531);
-            this.Controls.Add(this.NumHSL);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.textNgaySinh);
-            this.Controls.Add(this.ButtonHuy);
             this.Controls.Add(this.ButtonLuu);
             this.Controls.Add(this.txtDiaChiNV);
             this.Controls.Add(this.textSDT);
@@ -315,7 +317,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FthemNhanVien";
             this.Text = "FthemNhanVien";
-            ((System.ComponentModel.ISupportInitialize)(this.NumHSL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -341,9 +343,9 @@
         private System.Windows.Forms.TextBox textSDT;
         private System.Windows.Forms.TextBox txtDiaChiNV;
         private System.Windows.Forms.Button ButtonLuu;
-        private System.Windows.Forms.Button ButtonHuy;
         private System.Windows.Forms.DateTimePicker textNgaySinh;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.NumericUpDown NumHSL;
+        private System.Windows.Forms.Button button1;
     }
 };

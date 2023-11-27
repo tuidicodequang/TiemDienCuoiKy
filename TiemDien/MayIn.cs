@@ -17,15 +17,10 @@ namespace TiemDien
         public string KhoGiay { get; set; }
 
         public string KetNoi { get; set; }
-        public bool InHaiMat { get; set; }
-
-        public override void TinhNang()
-        {
-            bool InHaiMat;
-        }
+      
         public override double LuongDienTietKiem()
         {
-            if (InHaiMat == true)
+            if (Dophangiai == "4k")
             {
                 return 0.03;
             }

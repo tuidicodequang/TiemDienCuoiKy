@@ -12,6 +12,7 @@ namespace TiemDien
         public int id { get; set; }
         public string masp { get; set; }
 
+        public string loaisp {  get; set; }
         public string tensp { get; set; }
 
         public decimal gia { get; set; }
@@ -21,25 +22,24 @@ namespace TiemDien
         public double trongluong { get; set; }
 
         public string kichthuoc { get; set; }
+
+        public string Mau {  get; set; }
         public SanPham() { }
 
-        public SanPham(int id, string masp, string tensp, decimal gia, double congsuat, double trongluong, string kichthuoc)
+        public SanPham(int id, string masp, string loaisp,string tensp, decimal gia, double congsuat, double trongluong, string kichthuoc,string Mau )
         {
             this.id = id;
             this.masp = masp;
+            this.loaisp = loaisp;
             this.tensp = tensp;
             this.gia = gia;
             this.congsuat = congsuat;
             this.trongluong = trongluong;
             this.kichthuoc = kichthuoc;
+            this.Mau = Mau;
         }
 
-        public abstract void TinhNang();
+        
         public abstract double LuongDienTietKiem();
-
-
-
-
-
     }
 }

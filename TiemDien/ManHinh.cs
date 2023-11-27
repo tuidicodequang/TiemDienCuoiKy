@@ -21,19 +21,11 @@ namespace TiemDien
         public string tansoquet { get; set; }
         public string LoaiManHinh { get; set; }
 
-        public bool Co3d { get; set; }
-        public bool Baovemat { get; set; }
-        public bool Chongtroi { get; set; }
-        public override void TinhNang()
-        {
-            bool Co3d;
-            bool Baovemat;
-            bool Chongtroi;
-
-        }
+      
+      
         public override double LuongDienTietKiem()
         {
-            if (Co3d == true)
+            if (tamnen == "oled")
             {
                 return 0.02;
             }
