@@ -34,7 +34,6 @@ namespace TiemDien
             string diaChi = txtDiaChiNV.Text;
             string user = textUser.Text;
             string password = textPassword.Text;
-            double HeSoluong =  (double)(NumHSL.Value);
             string prefix = maNV.Substring(0, 2);
 
             NhanVien nhanVien = null;
@@ -43,7 +42,6 @@ namespace TiemDien
             {
                 case "KT":
                     nhanVien = new NhanVienKT();
-                    nhanVien.ChucVu = "Ky thuat";
                     break;
 
                 case "BH":
