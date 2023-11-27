@@ -170,11 +170,6 @@
     <None Include="Resources\a214VPd_460s.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="FontAwesome.Sharp">
-      <Version>6.3.0</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\a713baecd7e21cefd09de167ef767170.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +180,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\b8f900e01d89193a537ba44eae92945f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.Sharp">
+      <Version>6.3.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
