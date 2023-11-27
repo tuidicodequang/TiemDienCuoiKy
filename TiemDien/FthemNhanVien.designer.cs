@@ -40,17 +40,13 @@
             this.textMANV = new System.Windows.Forms.TextBox();
             this.TickNam = new System.Windows.Forms.RadioButton();
             this.TickNu = new System.Windows.Forms.RadioButton();
+            this.textNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.textHoTen = new System.Windows.Forms.TextBox();
             this.textUser = new System.Windows.Forms.TextBox();
             this.textPassword = new System.Windows.Forms.TextBox();
             this.textSDT = new System.Windows.Forms.TextBox();
             this.txtDiaChiNV = new System.Windows.Forms.TextBox();
             this.ButtonLuu = new System.Windows.Forms.Button();
-            this.ButtonHuy = new System.Windows.Forms.Button();
-            this.textNgaySinh = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
-            this.NumHSL = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.NumHSL)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -175,6 +171,14 @@
             this.TickNu.Text = "Nữ";
             this.TickNu.UseVisualStyleBackColor = true;
             // 
+            // textNgaySinh
+            // 
+            this.textNgaySinh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textNgaySinh.Location = new System.Drawing.Point(191, 305);
+            this.textNgaySinh.Name = "textNgaySinh";
+            this.textNgaySinh.Size = new System.Drawing.Size(241, 30);
+            this.textNgaySinh.TabIndex = 16;
+            // 
             // textHoTen
             // 
             this.textHoTen.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -217,89 +221,26 @@
             // 
             // ButtonLuu
             // 
-            this.ButtonLuu.Location = new System.Drawing.Point(791, 371);
+            this.ButtonLuu.Location = new System.Drawing.Point(676, 261);
             this.ButtonLuu.Name = "ButtonLuu";
-            this.ButtonLuu.Size = new System.Drawing.Size(81, 33);
+            this.ButtonLuu.Size = new System.Drawing.Size(75, 23);
             this.ButtonLuu.TabIndex = 21;
-            this.ButtonLuu.Text = "Lưu";
+            this.ButtonLuu.Text = "button1";
             this.ButtonLuu.UseVisualStyleBackColor = true;
             this.ButtonLuu.Click += new System.EventHandler(this.ButtonLuu_Click_1);
-            // 
-            // ButtonHuy
-            // 
-            this.ButtonHuy.Location = new System.Drawing.Point(930, 371);
-            this.ButtonHuy.Name = "ButtonHuy";
-            this.ButtonHuy.Size = new System.Drawing.Size(81, 33);
-            this.ButtonHuy.TabIndex = 22;
-            this.ButtonHuy.Text = "Hủy";
-            this.ButtonHuy.UseVisualStyleBackColor = true;
-            this.ButtonHuy.Click += new System.EventHandler(this.ButtonHuy_Click);
-            // 
-            // textNgaySinh
-            // 
-            this.textNgaySinh.CustomFormat = "MM/dd/yyyy";
-            this.textNgaySinh.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.textNgaySinh.Location = new System.Drawing.Point(191, 305);
-            this.textNgaySinh.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.textNgaySinh.Name = "textNgaySinh";
-            this.textNgaySinh.Size = new System.Drawing.Size(196, 27);
-            this.textNgaySinh.TabIndex = 23;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(592, 237);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(102, 23);
-            this.label10.TabIndex = 24;
-            this.label10.Text = "Hệ số lương";
-            // 
-            // NumHSL
-            // 
-            this.NumHSL.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.NumHSL.DecimalPlaces = 1;
-            this.NumHSL.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.NumHSL.Location = new System.Drawing.Point(791, 240);
-            this.NumHSL.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.NumHSL.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.NumHSL.Name = "NumHSL";
-            this.NumHSL.Size = new System.Drawing.Size(120, 22);
-            this.NumHSL.TabIndex = 26;
-            this.NumHSL.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // FthemNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1095, 531);
-            this.Controls.Add(this.NumHSL);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.textNgaySinh);
-            this.Controls.Add(this.ButtonHuy);
             this.Controls.Add(this.ButtonLuu);
             this.Controls.Add(this.txtDiaChiNV);
             this.Controls.Add(this.textSDT);
             this.Controls.Add(this.textPassword);
             this.Controls.Add(this.textUser);
             this.Controls.Add(this.textHoTen);
+            this.Controls.Add(this.textNgaySinh);
             this.Controls.Add(this.TickNu);
             this.Controls.Add(this.TickNam);
             this.Controls.Add(this.textMANV);
@@ -315,7 +256,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FthemNhanVien";
             this.Text = "FthemNhanVien";
-            ((System.ComponentModel.ISupportInitialize)(this.NumHSL)).EndInit();
+            this.Load += new System.EventHandler(this.FthemNhanVien_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,15 +276,12 @@
         private System.Windows.Forms.TextBox textMANV;
         private System.Windows.Forms.RadioButton TickNam;
         private System.Windows.Forms.RadioButton TickNu;
+        private System.Windows.Forms.DateTimePicker textNgaySinh;
         private System.Windows.Forms.TextBox textHoTen;
         private System.Windows.Forms.TextBox textUser;
         private System.Windows.Forms.TextBox textPassword;
         private System.Windows.Forms.TextBox textSDT;
         private System.Windows.Forms.TextBox txtDiaChiNV;
         private System.Windows.Forms.Button ButtonLuu;
-        private System.Windows.Forms.Button ButtonHuy;
-        private System.Windows.Forms.DateTimePicker textNgaySinh;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.NumericUpDown NumHSL;
     }
 };
