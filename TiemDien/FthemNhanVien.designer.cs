@@ -46,6 +46,7 @@
             this.textPassword = new System.Windows.Forms.TextBox();
             this.textSDT = new System.Windows.Forms.TextBox();
             this.txtDiaChiNV = new System.Windows.Forms.TextBox();
+            this.ButtonLuu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -218,11 +219,22 @@
             this.txtDiaChiNV.Size = new System.Drawing.Size(249, 27);
             this.txtDiaChiNV.TabIndex = 17;
             // 
+            // ButtonLuu
+            // 
+            this.ButtonLuu.Location = new System.Drawing.Point(676, 261);
+            this.ButtonLuu.Name = "ButtonLuu";
+            this.ButtonLuu.Size = new System.Drawing.Size(75, 23);
+            this.ButtonLuu.TabIndex = 21;
+            this.ButtonLuu.Text = "button1";
+            this.ButtonLuu.UseVisualStyleBackColor = true;
+            this.ButtonLuu.Click += new System.EventHandler(this.ButtonLuu_Click_1);
+            // 
             // FthemNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1095, 531);
+            this.Controls.Add(this.ButtonLuu);
             this.Controls.Add(this.txtDiaChiNV);
             this.Controls.Add(this.textSDT);
             this.Controls.Add(this.textPassword);
@@ -270,6 +282,6 @@
         private System.Windows.Forms.TextBox textPassword;
         private System.Windows.Forms.TextBox textSDT;
         private System.Windows.Forms.TextBox txtDiaChiNV;
-
+        private System.Windows.Forms.Button ButtonLuu;
     }
 };

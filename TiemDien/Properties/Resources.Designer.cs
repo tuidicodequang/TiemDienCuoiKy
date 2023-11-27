@@ -123,6 +123,16 @@ namespace TiemDien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap b8f900e01d89193a537ba44eae92945f {
+            get {
+                object obj = ResourceManager.GetObject("b8f900e01d89193a537ba44eae92945f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap b9a21791534383_5e341720a5140 {
             get {
                 object obj = ResourceManager.GetObject("b9a21791534383.5e341720a5140", resourceCulture);

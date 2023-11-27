@@ -14,10 +14,7 @@ namespace TiemDien
             InitializeComponent();
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
 
         private void FthemNhanVien_Load(object sender, EventArgs e)
         {
@@ -141,6 +138,15 @@ namespace TiemDien
             MessageBox.Show($"XML file '{fileName}' has been created.");
         }
 
+        private void ButtonLuu_Click_1(object sender, EventArgs e)
+        {
+            NhanVien nhanVien = CreateNhanVienFromInput();
 
+            if (nhanVien != null)
+            {
+                FNhanVien.dsNhanVien.Add(nhanVien);
+                SaveListNhanVien(FNhanVien.dsNhanVien);
+            }
+        }
     }
 }

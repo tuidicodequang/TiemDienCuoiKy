@@ -46,10 +46,29 @@ namespace TiemDien
             InitializeComponent();
             LoadBangNhanVien();
         }
-
+        private Form currentFormChild;
+        private void OpenchildForm(Form childFrom)
+        {
+            if (currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+            currentFormChild = childFrom;
+            childFrom.TopLevel = false;
+            childFrom.FormBorderStyle = FormBorderStyle.None;
+            childFrom.Dock = DockStyle.Fill;
+            panel1.Controls.Add(childFrom);
+            panel1.Tag = childFrom;
+            childFrom.BringToFront();
+            childFrom.Show();
+        }
         private void btnInsert_Click(object sender, EventArgs e)
         {
-            // Xử lý sự kiện khi nhấn nút Insert
+            
+            FthemNhanVien f= new FthemNhanVien();
+            
+           OpenchildForm(f);
+            
         }
 
         private void LoadBangNhanVien()
