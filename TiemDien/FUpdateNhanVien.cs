@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+using System.Globalization;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 
@@ -14,83 +9,61 @@ namespace TiemDien
 {
     public partial class FUpdateNhanVien : Form
     {
+        public NhanVien nhanvienUpdate { get; set; }
+          
         public FUpdateNhanVien()
         {
             InitializeComponent();
         }
 
-        
+     
 
-        
-
-        private void iconButton2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-         
-            
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật lại thông tin khách hàng này?", "Xác nhận cập nhật", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                nhanvienUpdate.Ma = textMANV.Text;
+                nhanvienUpdate.Hoten = textHoTen.Text;
+                nhanvienUpdate.Username = textUser.Text;
+                nhanvienUpdate.NgaySinh = txtNgaySinh.Text;
+                nhanvienUpdate.GioiTinh = TickNam.Checked ? TickNam.Text : TickNu.Text;
+                nhanvienUpdate.MatKhau = textPassword.Text;
+                nhanvienUpdate.DiaChi = txtDiaChiNV.Text;
+
+                // Sử dụng XuLyEntity để lưu danh sách
+                XuLyEntity<NhanVien>.SaveList(FNhanVien.dsNhanVien, "NhanVien.xml");
+               
+            }
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
+        private void FUpdateNhanVien_Load_1(object sender, EventArgs e)
+        {
+            if (nhanvienUpdate != null)
+            {
+                textMANV.Text = nhanvienUpdate.Ma.ToString();
+                textHoTen.Text = nhanvienUpdate.Hoten.ToString();
+                textPassword.Text = nhanvienUpdate.MatKhau;
+
+                try
+                {
+                    DateTime ngaySinh = DateTime.ParseExact(nhanvienUpdate.NgaySinh, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                    txtNgaySinh.Value = ngaySinh;
+                }
+                catch (FormatException ex)
+                {
+                    MessageBox.Show("Ngày sinh không hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                (TickNam.Checked, TickNu.Checked) = (nhanvienUpdate.GioiTinh == "Nam") ? (true, false) : (false, true);
+                textUser.Text = nhanvienUpdate.Username.ToString();
+                //textSDT.Text = nhanvienUpdate.SDT.ToString();
+                txtDiaChiNV.Text = nhanvienUpdate.DiaChi.ToString();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-        public static void SaveListNhanVien(List<NhanVien> employees)
-        {
-            string file = "NhanVien.xml";
-
-            try
-            {
-                XmlSerializer serializer = new XmlSerializer(typeof(List<NhanVien>), new XmlRootAttribute("ArrayOfNhanVien"));
-
-                using (TextWriter writer = new StreamWriter(file))
-                {
-                    serializer.Serialize(writer, employees);
-                }
-
-                MessageBox.Show($"Updated information saved to XML file '{file}'.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error serializing to XML: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        public static List<NhanVien> LoadListNhanVien()
-        {
-            string file = "NhanVien.xml";
-            List<NhanVien> dsNhanVien = new List<NhanVien>();
-
-            try
-            {
-                XmlSerializer serializer = new XmlSerializer(typeof(List<NhanVien>), new XmlRootAttribute("ArrayOfNhanVien"));
-
-                using (FileStream fs = new FileStream(file, FileMode.Open))
-                {
-                    dsNhanVien = (List<NhanVien>)serializer.Deserialize(fs);
-                }
-
-                Console.WriteLine($"XML file '{file}' has been deserialized.");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error deserializing from XML: {ex.Message}");
-            }
-
-            return dsNhanVien;
-
-
-
-        }
-
-
-        static void SerializeToXml<T>(string fileName, T obj)
-        {
-            XmlSerializer serializer = new XmlSerializer(typeof(T));
-
-            using (TextWriter writer = new StreamWriter(fileName))
-            {
-                serializer.Serialize(writer, obj);
-            }
-
-            MessageBox.Show($"XML file '{fileName}' has been created.");
         }
     }
 }

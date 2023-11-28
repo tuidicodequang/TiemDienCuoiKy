@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace TiemDien
 {
+    
     public class Loa : SanPham
     {
         public string ChatLieu { get; set; }

@@ -12,6 +12,7 @@ namespace TiemDien
     [XmlInclude(typeof(NhanVienSale))]
     [XmlInclude(typeof(NhanVienKT))]
     [XmlInclude(typeof(NhanVienQL))]
+
     public  class NhanVien : User
     {
         public string Username { get; set; }

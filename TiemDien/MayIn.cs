@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace TiemDien
 {
+    [XmlInclude(typeof(Manhinh))]
+    [XmlInclude(typeof(Loa))]
+    [XmlInclude(typeof(MayIn))]
     public class MayIn : SanPham
     {
         public string Dophangiai { get; set; }

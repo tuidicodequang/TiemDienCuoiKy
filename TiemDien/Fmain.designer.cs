@@ -33,7 +33,16 @@ namespace QUANLYGARAGE
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fTabManager));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.Buttlogout = new FontAwesome.Sharp.IconButton();
+            this.ButtDoanhThu = new FontAwesome.Sharp.IconButton();
+            this.ButtSanPham = new FontAwesome.Sharp.IconButton();
+            this.ButtKhachHang = new FontAwesome.Sharp.IconButton();
+            this.ButtNhanVien = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -55,17 +64,9 @@ namespace QUANLYGARAGE
             this.lblCountNhanVien = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.Buttlogout = new FontAwesome.Sharp.IconButton();
-            this.ButtDoanhThu = new FontAwesome.Sharp.IconButton();
-            this.ButtSanPham = new FontAwesome.Sharp.IconButton();
-            this.ButtKhachHang = new FontAwesome.Sharp.IconButton();
-            this.ButtNhanVien = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelDesktop.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -77,7 +78,6 @@ namespace QUANLYGARAGE
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -98,6 +98,181 @@ namespace QUANLYGARAGE
             this.panelMenu.Size = new System.Drawing.Size(226, 760);
             this.panelMenu.TabIndex = 0;
             // 
+            // iconButton3
+            // 
+            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
+            this.iconButton3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.ClipboardCheck;
+            this.iconButton3.IconColor = System.Drawing.Color.White;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.IconSize = 30;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.Location = new System.Drawing.Point(0, 327);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.iconButton3.Size = new System.Drawing.Size(226, 46);
+            this.iconButton3.TabIndex = 9;
+            this.iconButton3.Tag = "Đơn hàng";
+            this.iconButton3.Text = "Đơn hàng";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton3.UseVisualStyleBackColor = true;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            // 
+            // Buttlogout
+            // 
+            this.Buttlogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Buttlogout.FlatAppearance.BorderSize = 0;
+            this.Buttlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Buttlogout.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
+            this.Buttlogout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Buttlogout.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.Buttlogout.IconColor = System.Drawing.Color.White;
+            this.Buttlogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Buttlogout.IconSize = 30;
+            this.Buttlogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Buttlogout.Location = new System.Drawing.Point(0, 714);
+            this.Buttlogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Buttlogout.Name = "Buttlogout";
+            this.Buttlogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.Buttlogout.Size = new System.Drawing.Size(226, 46);
+            this.Buttlogout.TabIndex = 8;
+            this.Buttlogout.Tag = "Đăng xuất";
+            this.Buttlogout.Text = "Đăng xuất";
+            this.Buttlogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Buttlogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Buttlogout.UseVisualStyleBackColor = true;
+            this.Buttlogout.Click += new System.EventHandler(this.Buttlogout_Click);
+            // 
+            // ButtDoanhThu
+            // 
+            this.ButtDoanhThu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ButtDoanhThu.FlatAppearance.BorderSize = 0;
+            this.ButtDoanhThu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtDoanhThu.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
+            this.ButtDoanhThu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ButtDoanhThu.IconChar = FontAwesome.Sharp.IconChar.MoneyBill1Wave;
+            this.ButtDoanhThu.IconColor = System.Drawing.Color.White;
+            this.ButtDoanhThu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ButtDoanhThu.IconSize = 30;
+            this.ButtDoanhThu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtDoanhThu.Location = new System.Drawing.Point(0, 281);
+            this.ButtDoanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ButtDoanhThu.Name = "ButtDoanhThu";
+            this.ButtDoanhThu.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.ButtDoanhThu.Size = new System.Drawing.Size(226, 46);
+            this.ButtDoanhThu.TabIndex = 5;
+            this.ButtDoanhThu.Tag = "Doanh thu";
+            this.ButtDoanhThu.Text = "Doanh thu";
+            this.ButtDoanhThu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtDoanhThu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ButtDoanhThu.UseVisualStyleBackColor = true;
+            this.ButtDoanhThu.Click += new System.EventHandler(this.ButtDoanhThu_Click);
+            // 
+            // ButtSanPham
+            // 
+            this.ButtSanPham.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ButtSanPham.FlatAppearance.BorderSize = 0;
+            this.ButtSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtSanPham.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
+            this.ButtSanPham.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ButtSanPham.IconChar = FontAwesome.Sharp.IconChar.CarAlt;
+            this.ButtSanPham.IconColor = System.Drawing.Color.White;
+            this.ButtSanPham.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ButtSanPham.IconSize = 30;
+            this.ButtSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtSanPham.Location = new System.Drawing.Point(0, 235);
+            this.ButtSanPham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ButtSanPham.Name = "ButtSanPham";
+            this.ButtSanPham.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.ButtSanPham.Size = new System.Drawing.Size(226, 46);
+            this.ButtSanPham.TabIndex = 4;
+            this.ButtSanPham.Tag = "Sản phẩm";
+            this.ButtSanPham.Text = "Sản phẩm";
+            this.ButtSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtSanPham.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ButtSanPham.UseVisualStyleBackColor = true;
+            this.ButtSanPham.Click += new System.EventHandler(this.ButtSanPham_Click);
+            // 
+            // ButtKhachHang
+            // 
+            this.ButtKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ButtKhachHang.FlatAppearance.BorderSize = 0;
+            this.ButtKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtKhachHang.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
+            this.ButtKhachHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ButtKhachHang.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.ButtKhachHang.IconColor = System.Drawing.Color.White;
+            this.ButtKhachHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ButtKhachHang.IconSize = 30;
+            this.ButtKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtKhachHang.Location = new System.Drawing.Point(0, 189);
+            this.ButtKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ButtKhachHang.Name = "ButtKhachHang";
+            this.ButtKhachHang.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.ButtKhachHang.Size = new System.Drawing.Size(226, 46);
+            this.ButtKhachHang.TabIndex = 3;
+            this.ButtKhachHang.Tag = "Khách hàng";
+            this.ButtKhachHang.Text = "Khách hàng";
+            this.ButtKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtKhachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ButtKhachHang.UseVisualStyleBackColor = true;
+            this.ButtKhachHang.Click += new System.EventHandler(this.ButtKhachHang_Click);
+            // 
+            // ButtNhanVien
+            // 
+            this.ButtNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ButtNhanVien.FlatAppearance.BorderSize = 0;
+            this.ButtNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtNhanVien.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
+            this.ButtNhanVien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ButtNhanVien.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.ButtNhanVien.IconColor = System.Drawing.Color.White;
+            this.ButtNhanVien.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ButtNhanVien.IconSize = 30;
+            this.ButtNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtNhanVien.Location = new System.Drawing.Point(0, 143);
+            this.ButtNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ButtNhanVien.Name = "ButtNhanVien";
+            this.ButtNhanVien.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.ButtNhanVien.Size = new System.Drawing.Size(226, 46);
+            this.ButtNhanVien.TabIndex = 2;
+            this.ButtNhanVien.Tag = "Nhân viên";
+            this.ButtNhanVien.Text = "Nhân viên";
+            this.ButtNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ButtNhanVien.UseVisualStyleBackColor = true;
+            this.ButtNhanVien.Click += new System.EventHandler(this.ButtNhanVien_Click);
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
+            this.iconButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.HomeLg;
+            this.iconButton2.IconColor = System.Drawing.Color.White;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 30;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(0, 97);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.iconButton2.Size = new System.Drawing.Size(226, 46);
+            this.iconButton2.TabIndex = 1;
+            this.iconButton2.Tag = "Trang chủ";
+            this.iconButton2.Text = " Trang chủ";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.iconButton1);
@@ -108,6 +283,32 @@ namespace QUANLYGARAGE
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(226, 97);
             this.panel2.TabIndex = 0;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.BarChart;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.Location = new System.Drawing.Point(179, 2);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(53, 39);
+            this.iconButton1.TabIndex = 2;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TiemDien.Properties.Resources.a214VPd_460s;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(226, 95);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // panelDesktop
             // 
@@ -378,211 +579,10 @@ namespace QUANLYGARAGE
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(191, 83);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 0;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
-            this.iconButton3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.ClipboardCheck;
-            this.iconButton3.IconColor = System.Drawing.Color.White;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 30;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 327);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton3.Size = new System.Drawing.Size(226, 46);
-            this.iconButton3.TabIndex = 9;
-            this.iconButton3.Tag = "Đơn hàng";
-            this.iconButton3.Text = "Đơn hàng";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton3.UseVisualStyleBackColor = true;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
-            // 
-            // Buttlogout
-            // 
-            this.Buttlogout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Buttlogout.FlatAppearance.BorderSize = 0;
-            this.Buttlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Buttlogout.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
-            this.Buttlogout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Buttlogout.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
-            this.Buttlogout.IconColor = System.Drawing.Color.White;
-            this.Buttlogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Buttlogout.IconSize = 30;
-            this.Buttlogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Buttlogout.Location = new System.Drawing.Point(0, 714);
-            this.Buttlogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Buttlogout.Name = "Buttlogout";
-            this.Buttlogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.Buttlogout.Size = new System.Drawing.Size(226, 46);
-            this.Buttlogout.TabIndex = 8;
-            this.Buttlogout.Tag = "Đăng xuất";
-            this.Buttlogout.Text = "Đăng xuất";
-            this.Buttlogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Buttlogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Buttlogout.UseVisualStyleBackColor = true;
-            this.Buttlogout.Click += new System.EventHandler(this.Buttlogout_Click);
-            // 
-            // ButtDoanhThu
-            // 
-            this.ButtDoanhThu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ButtDoanhThu.FlatAppearance.BorderSize = 0;
-            this.ButtDoanhThu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtDoanhThu.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
-            this.ButtDoanhThu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ButtDoanhThu.IconChar = FontAwesome.Sharp.IconChar.MoneyBill1Wave;
-            this.ButtDoanhThu.IconColor = System.Drawing.Color.White;
-            this.ButtDoanhThu.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ButtDoanhThu.IconSize = 30;
-            this.ButtDoanhThu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtDoanhThu.Location = new System.Drawing.Point(0, 281);
-            this.ButtDoanhThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ButtDoanhThu.Name = "ButtDoanhThu";
-            this.ButtDoanhThu.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ButtDoanhThu.Size = new System.Drawing.Size(226, 46);
-            this.ButtDoanhThu.TabIndex = 5;
-            this.ButtDoanhThu.Tag = "Doanh thu";
-            this.ButtDoanhThu.Text = "Doanh thu";
-            this.ButtDoanhThu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtDoanhThu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ButtDoanhThu.UseVisualStyleBackColor = true;
-            this.ButtDoanhThu.Click += new System.EventHandler(this.ButtDoanhThu_Click);
-            // 
-            // ButtSanPham
-            // 
-            this.ButtSanPham.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ButtSanPham.FlatAppearance.BorderSize = 0;
-            this.ButtSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtSanPham.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
-            this.ButtSanPham.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ButtSanPham.IconChar = FontAwesome.Sharp.IconChar.CarAlt;
-            this.ButtSanPham.IconColor = System.Drawing.Color.White;
-            this.ButtSanPham.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ButtSanPham.IconSize = 30;
-            this.ButtSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtSanPham.Location = new System.Drawing.Point(0, 235);
-            this.ButtSanPham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ButtSanPham.Name = "ButtSanPham";
-            this.ButtSanPham.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ButtSanPham.Size = new System.Drawing.Size(226, 46);
-            this.ButtSanPham.TabIndex = 4;
-            this.ButtSanPham.Tag = "Sản phẩm";
-            this.ButtSanPham.Text = "Sản phẩm";
-            this.ButtSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtSanPham.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ButtSanPham.UseVisualStyleBackColor = true;
-            this.ButtSanPham.Click += new System.EventHandler(this.ButtSanPham_Click);
-            // 
-            // ButtKhachHang
-            // 
-            this.ButtKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ButtKhachHang.FlatAppearance.BorderSize = 0;
-            this.ButtKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtKhachHang.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
-            this.ButtKhachHang.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ButtKhachHang.IconChar = FontAwesome.Sharp.IconChar.Users;
-            this.ButtKhachHang.IconColor = System.Drawing.Color.White;
-            this.ButtKhachHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ButtKhachHang.IconSize = 30;
-            this.ButtKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtKhachHang.Location = new System.Drawing.Point(0, 189);
-            this.ButtKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ButtKhachHang.Name = "ButtKhachHang";
-            this.ButtKhachHang.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ButtKhachHang.Size = new System.Drawing.Size(226, 46);
-            this.ButtKhachHang.TabIndex = 3;
-            this.ButtKhachHang.Tag = "Khách hàng";
-            this.ButtKhachHang.Text = "Khách hàng";
-            this.ButtKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtKhachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ButtKhachHang.UseVisualStyleBackColor = true;
-            this.ButtKhachHang.Click += new System.EventHandler(this.ButtKhachHang_Click);
-            // 
-            // ButtNhanVien
-            // 
-            this.ButtNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ButtNhanVien.FlatAppearance.BorderSize = 0;
-            this.ButtNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtNhanVien.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
-            this.ButtNhanVien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ButtNhanVien.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
-            this.ButtNhanVien.IconColor = System.Drawing.Color.White;
-            this.ButtNhanVien.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ButtNhanVien.IconSize = 30;
-            this.ButtNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtNhanVien.Location = new System.Drawing.Point(0, 143);
-            this.ButtNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ButtNhanVien.Name = "ButtNhanVien";
-            this.ButtNhanVien.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.ButtNhanVien.Size = new System.Drawing.Size(226, 46);
-            this.ButtNhanVien.TabIndex = 2;
-            this.ButtNhanVien.Tag = "Nhân viên";
-            this.ButtNhanVien.Text = "Nhân viên";
-            this.ButtNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ButtNhanVien.UseVisualStyleBackColor = true;
-            this.ButtNhanVien.Click += new System.EventHandler(this.ButtNhanVien_Click);
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
-            this.iconButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.HomeLg;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 30;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 97);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton2.Size = new System.Drawing.Size(226, 46);
-            this.iconButton2.TabIndex = 1;
-            this.iconButton2.Tag = "Trang chủ";
-            this.iconButton2.Text = " Trang chủ";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseVisualStyleBackColor = true;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.BarChart;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(179, 2);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(53, 39);
-            this.iconButton1.TabIndex = 2;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TiemDien.Properties.Resources.a214VPd_460s;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(226, 95);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // fTabManager
             // 
@@ -603,6 +603,7 @@ namespace QUANLYGARAGE
             this.Load += new System.EventHandler(this.fTabManager_Load);
             this.panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -620,7 +621,6 @@ namespace QUANLYGARAGE
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

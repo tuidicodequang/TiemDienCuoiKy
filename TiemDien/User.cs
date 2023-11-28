@@ -19,6 +19,8 @@ namespace TiemDien
 
         public string GioiTinh { get; set; }
 
+        public string SĐT {  get; set; }
+
         public User() { }
 
         public User(string Ma, string Hoten, string DiaChi,string NgaySinh,string GioiTinh)
