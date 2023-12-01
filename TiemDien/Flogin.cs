@@ -9,39 +9,49 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QUANLYGARAGE;
+
+using DoAn_2;
 
 
 namespace TiemDien
 {
     public partial class Flogin : Form
     {
+        public static List<NhanVien> dsNhanVien = XuLyEntity<NhanVien>.LoadList("NhanVien.xml");
+        
         public Flogin()
         {
             InitializeComponent();
+            
         }
 
         private void buttLogin_Click(object sender, EventArgs e)
         {
-          
+
             try
             {
                 
-                string tk = txbUser.Text;
-                string mk = txbPassWord.Text;
-             
-                if (tk=="Tienanh" && mk=="456")
-                {
-                    fTabManager f = new fTabManager();
-                    this.Hide();
-                    f.ShowDialog();
+                
+
+                    string tk = txbUser.Text;
+                    string mk = txbPassWord.Text;
+
+                    // Sử dụng phương thức Find để tìm kiếm trong danh sách dsNhanVien
+                    NhanVien user = dsNhanVien.Find(x => x.Username == tk && x.MatKhau == mk && x.ChucVu == "Quan Ly");
+
+                    if (user != null)
+                    {
                     
-                   
-                }
-                else
-                {
-                    MessageBox.Show("Tên đăng nhập hoặc mật khẩu chưa chính xác vui lòng nhập lại!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
+                    MainControl f = new MainControl();
+                    f.TK = tk;
+                        this.Hide();
+                        f.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tên đăng nhập hoặc mật khẩu chưa chính xác vui lòng nhập lại!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                
             }
             catch (Exception ex)
             {
@@ -95,6 +105,6 @@ namespace TiemDien
         private void button1_MouseLeave(object sender, EventArgs e)
         {
             button1.ForeColor = Color.White;
-        }
+        } 
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace TiemDien
 {
@@ -10,11 +11,16 @@ namespace TiemDien
         public string ChatLieu { get; set; }
         public string TanSo { get; set; }
         public string KetNoi { get; set; }
-        
-        public override double LuongDienTietKiem()
+
+        public Loa() : base(){}
+        public Loa(
+            int id, string maSP, string loaiSP, string tenSP, decimal gia, double congSuat, double trongLuong,
+            string kichThuoc, string mau, string chatLieu, string tanSo, string ketNoi
+        ) : base(id, maSP, loaiSP, tenSP, gia, congSuat, trongLuong, kichThuoc, mau)
         {
-            if (TanSo == "1000hz") { return 0.07; }
-            else return 0.1;
+            ChatLieu = chatLieu;
+            TanSo = tanSo;
+            KetNoi = ketNoi;
         }
 
     }

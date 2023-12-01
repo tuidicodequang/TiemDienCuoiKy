@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,24 +48,110 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDetail.designer.cs">
+      <DependentUpon>FDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainControl.designer.cs">
+      <DependentUpon>MainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XuLy.cs" />
+    <Compile Include="Dashboard.cs" />
     <Compile Include="CuaHangTiemDien.cs" />
+    <Compile Include="FChonTinhNangLoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FChonTinhNangLoa.Designer.cs">
+      <DependentUpon>FChonTinhNangLoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FChonTinhNangManHinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FChonTinhNangManHinh.Designer.cs">
+      <DependentUpon>FChonTinhNangManHinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FChonTinhNangMayIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FChonTinhNangMayIn.Designer.cs">
+      <DependentUpon>FChonTinhNangMayIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FdoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FdoanhThu.Designer.cs">
+      <DependentUpon>FdoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHoaDon.designer.cs">
+      <DependentUpon>FHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKhachHang.Designer.cs">
+      <DependentUpon>FKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Flogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Flogin.designer.cs">
       <DependentUpon>Flogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fmain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Fmain.designer.cs">
-      <DependentUpon>Fmain.cs</DependentUpon>
-    </Compile>
     <Compile Include="FNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FNhanVien.designer.cs">
       <DependentUpon>FNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSanPham.Designer.cs">
+      <DependentUpon>FSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FThemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FThemHoaDon.designer.cs">
+      <DependentUpon>FThemHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FThemSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FThemSanPham.Designer.cs">
+      <DependentUpon>FThemSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTimSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTimSanPham.designer.cs">
+      <DependentUpon>FTimSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FUpdateKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUpdateKH.Designer.cs">
+      <DependentUpon>FUpdateKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FThemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FThemKhachHang.Designer.cs">
+      <DependentUpon>FThemKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="FthemNhanVien.cs">
       <SubType>Form</SubType>
@@ -77,10 +165,16 @@
     <Compile Include="FUpdateNhanVien.designer.cs">
       <DependentUpon>FUpdateNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="IBoLocTimKiem.cs" />
+    <Compile Include="FUpdateSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUpdateSanPham.Designer.cs">
+      <DependentUpon>FUpdateSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.cs" />
     <Compile Include="IGiamGia.cs" />
-    <Compile Include="ITietKiemDien.cs" />
-    <Compile Include="KhacHang.cs" />
+    <Compile Include="ItemHoaDon.cs" />
+    <Compile Include="KhachHang.cs" />
     <Compile Include="Loa.cs" />
     <Compile Include="ManHinh.cs" />
     <Compile Include="MayIn.cs" />
@@ -89,20 +183,65 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SanPham.cs" />
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="FChonTinhNangLoa.resx">
+      <DependentUpon>FChonTinhNangLoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FChonTinhNangManHinh.resx">
+      <DependentUpon>FChonTinhNangManHinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FChonTinhNangMayIn.resx">
+      <DependentUpon>FChonTinhNangMayIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDetail.resx">
+      <DependentUpon>FDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FdoanhThu.resx">
+      <DependentUpon>FdoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHoaDon.resx">
+      <DependentUpon>FHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKhachHang.resx">
+      <DependentUpon>FKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Flogin.resx">
       <DependentUpon>Flogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Fmain.resx">
-      <DependentUpon>Fmain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FNhanVien.resx">
       <DependentUpon>FNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSanPham.resx">
+      <DependentUpon>FSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FThemHoaDon.resx">
+      <DependentUpon>FThemHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FThemKhachHang.resx">
+      <DependentUpon>FThemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FthemNhanVien.resx">
       <DependentUpon>FthemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FThemSanPham.resx">
+      <DependentUpon>FThemSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTimSanPham.resx">
+      <DependentUpon>FTimSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUpdateKH.resx">
+      <DependentUpon>FUpdateKH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FUpdateNhanVien.resx">
       <DependentUpon>FUpdateNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUpdateSanPham.resx">
+      <DependentUpon>FUpdateSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainControl.resx">
+      <DependentUpon>MainControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -185,6 +324,27 @@
     <PackageReference Include="FontAwesome.Sharp">
       <Version>6.3.0</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart_4034643.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\revenue_77684331.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistics_5454515.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_4034499.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people_9968491.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\device.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e3f7744697484505a7da4496f23c2a85.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

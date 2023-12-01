@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace TiemDien
 {
@@ -17,15 +18,18 @@ namespace TiemDien
         public string KhoGiay { get; set; }
 
         public string KetNoi { get; set; }
-      
-        public override double LuongDienTietKiem()
+
+        public MayIn() { }
+        public MayIn(
+            int id, string maSP, string loaiSP, string tenSP, decimal gia, double congSuat, double trongLuong,
+            string kichThuoc, string mau, string dophangiai, string tocdoin, string boNho, string khoGiay, string ketNoi
+        ) : base(id, maSP, loaiSP, tenSP, gia, congSuat, trongLuong, kichThuoc, mau)
         {
-            if (Dophangiai == "4k")
-            {
-                return 0.03;
-            }
-            else
-                return 0.1;
+            Dophangiai = dophangiai;
+            Tocdoin = tocdoin;
+            BoNho = boNho;
+            KhoGiay = khoGiay;
+            KetNoi = ketNoi;
         }
 
     }

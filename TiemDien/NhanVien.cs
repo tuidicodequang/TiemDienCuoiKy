@@ -12,7 +12,8 @@ namespace TiemDien
     [XmlInclude(typeof(NhanVienSale))]
     [XmlInclude(typeof(NhanVienKT))]
     [XmlInclude(typeof(NhanVienQL))]
-    public  class NhanVien : User
+
+    public class NhanVien : User
     {
         public string Username { get; set; }
         public string MatKhau { get; set; }
@@ -21,7 +22,8 @@ namespace TiemDien
         protected decimal LuongCB { get; set; } = 5000000.00m; // Lương cơ bản
 
         public NhanVien() { }
-        public NhanVien(string username, string matKhau, string chucVu, double heSoLuong)
+        public NhanVien(string ma, string hoten, string diaChi, string ngaySinh, string gioiTinh, string SĐT, string username, string matKhau, string chucVu, double heSoLuong)
+            : base(ma, hoten, diaChi, ngaySinh, gioiTinh, SĐT)
         {
             Username = username;
             MatKhau = matKhau;
@@ -44,8 +46,8 @@ namespace TiemDien
     {
         public int SoNgayTangCa { get; set; }
         public NhanVienKT() { }
-        public NhanVienKT(string username, string matKhau, double heSoLuong, int soNgayTangCa)
-            : base(username, matKhau, "KT", heSoLuong)
+        public NhanVienKT(string ma, string hoten, string diaChi, string ngaySinh, string gioiTinh, string SĐT, string username, string matKhau, string chucVu, double heSoLuong, int soNgayTangCa)
+            : base(ma, hoten, diaChi, ngaySinh, gioiTinh, SĐT, username, matKhau, chucVu, heSoLuong)
         {
             SoNgayTangCa = soNgayTangCa;
         }
@@ -59,9 +61,9 @@ namespace TiemDien
     public class NhanVienSale : NhanVien
     {
         public int SanPhamBanDuoc { get; set; }
-        public NhanVienSale() { }   
-        public NhanVienSale(string username, string matKhau, double heSoLuong, int sanPhamBanDuoc)
-            : base(username, matKhau, "Sale", heSoLuong)
+        public NhanVienSale() { }
+        public NhanVienSale(string ma, string hoten, string diaChi, string ngaySinh, string gioiTinh, string SĐT, string username, string matKhau, string chucVu, double heSoLuong, int sanPhamBanDuoc)
+            : base(ma, hoten, diaChi, ngaySinh, gioiTinh, SĐT, username, matKhau, chucVu, heSoLuong)
         {
             SanPhamBanDuoc = sanPhamBanDuoc;
         }
@@ -75,8 +77,8 @@ namespace TiemDien
     public class NhanVienQL : NhanVien
     {
         public NhanVienQL() { }
-        public NhanVienQL(string username, string matKhau, double heSoLuong)
-            : base(username, matKhau, "QL", heSoLuong)
+        public NhanVienQL(string ma, string hoten, string diaChi, string ngaySinh, string gioiTinh, string SĐT, string username, string matKhau, string chucVu, double heSoLuong)
+            : base(ma, hoten, diaChi, ngaySinh, gioiTinh, SĐT, username, matKhau, chucVu, heSoLuong)
         {
         }
 

@@ -3,43 +3,49 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 using TiemDien;
 
 namespace TiemDien
 {
-    public abstract class SanPham : ITietKiemDien
+    [XmlInclude(typeof(Manhinh))]
+    [XmlInclude(typeof(Loa))]
+    [XmlInclude(typeof(MayIn))]
+    public abstract class SanPham 
     {
-        public int id { get; set; }
-        public string masp { get; set; }
+        public int ID { get; set; }
+        public string MaSP { get; set; }
 
-        public string loaisp {  get; set; }
-        public string tensp { get; set; }
+        public string LoaiSP {  get; set; }
+        public string TenSP { get; set; }
 
-        public decimal gia { get; set; }
+        public decimal Gia { get; set; }
 
-        public double congsuat { get; set; }
+        public double CongSuat { get; set; }
 
-        public double trongluong { get; set; }
+        public double TrongLuong { get; set; }
 
-        public string kichthuoc { get; set; }
+        public string KichThuoc { get; set; }
 
         public string Mau {  get; set; }
-        public SanPham() { }
 
-        public SanPham(int id, string masp, string loaisp,string tensp, decimal gia, double congsuat, double trongluong, string kichthuoc,string Mau )
+        public SanPham()
         {
-            this.id = id;
-            this.masp = masp;
-            this.loaisp = loaisp;
-            this.tensp = tensp;
-            this.gia = gia;
-            this.congsuat = congsuat;
-            this.trongluong = trongluong;
-            this.kichthuoc = kichthuoc;
-            this.Mau = Mau;
         }
 
-        
-        public abstract double LuongDienTietKiem();
+        // Hàm khởi tạo với các tham số
+        public SanPham(int id, string maSP, string loaiSP, string tenSP, decimal gia, double congSuat, double trongLuong, string kichThuoc, string mau)
+        {
+            ID = id;
+            MaSP = maSP;
+            LoaiSP = loaiSP;
+            TenSP = tenSP;
+            Gia = gia;
+            CongSuat = congSuat;
+            TrongLuong = trongLuong;
+            KichThuoc = kichThuoc;
+            Mau = mau;
+        }
+      
     }
 }
